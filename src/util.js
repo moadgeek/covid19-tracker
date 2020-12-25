@@ -46,7 +46,7 @@ export const showDataOnMap = (data, casesType = "cases") => (
             Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier
           }
         >
-                  <Popup>
+        <Popup>
         <div className="info-container">
           <div
             className="info-flag"

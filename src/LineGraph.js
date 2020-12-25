@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import { Line } from "react-chartjs-2";
 import numeral from "numeral";
 
@@ -87,8 +87,7 @@ function LineGraph({casesType = 'cases' , ...props}) {
         <div className={props.className}>
             <h1>COVID-19 Graph</h1>
         {data?.length > 0 && (
-            <Line 
-            options={options}
+           <Line
             data={{
             datasets: [
             {
@@ -98,7 +97,9 @@ function LineGraph({casesType = 'cases' , ...props}) {
             },
             ],
             }}
+            options={options}
             />
+          
         )}
        
         </div>
